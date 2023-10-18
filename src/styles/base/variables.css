@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --color-primary: #ff9500;
+  --color-secondary: #51b2c9;
+  --color-background: #eef0f1;
+  --color-text: #30290f;
+  --color-text: #ff00ff; /* for debug */
+
+  /* Fonts */
+  --font-family: "Noto Serif", serif;
+  --font-size: 18px;
+  --font-weight: 300;
+
+  /* Space */
+  --space-small: 8px;
+  --space-medium: 16px;
+  --space-big: 32px;
+
+  /* Other */
+  --border-radius: 4px;
+
+  /* Media queries */
+  /* Mobile by default */
+  /* Tablet: 550px */
+  /* Desktop: 750px */
+}

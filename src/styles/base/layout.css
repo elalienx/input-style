@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  color: var(--color-text);
+}
