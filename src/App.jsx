@@ -20,13 +20,15 @@ export default function App() {
         components.
       </p>
 
+      <hr />
+
       {/* Checkbox */}
-      <h2>Checkbox</h2>
       <p>Item is checked? {check ? "yup ✅" : "nope ❌"}</p>
       <InputCheckbox settings={myFormulary.terms} state={[check, setCheck]} />
 
+      <hr />
+
       {/* Range slider */}
-      <h2>Range slider</h2>
       <InputRange settings={myFormulary.guests} state={[range, setRange]} />
     </div>
   );

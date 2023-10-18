@@ -4,7 +4,7 @@
   },
   "guests": {
     "label": "How many guests do you want to invite?",
-    "minium": 1,
+    "minimun": 1,
     "maximum": 10
   },
   "search": {

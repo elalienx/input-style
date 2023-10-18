@@ -8,8 +8,8 @@ export default function InputRange({ settings, state }) {
       <br />
       <input
         type="range"
-        max={maximum}
         min={minimun}
+        max={maximum}
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />
