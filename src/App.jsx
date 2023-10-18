@@ -2,7 +2,8 @@
 import { useState } from "react";
 
 // Project files
-import "./style.css";
+import "./styles/style.css";
+import InputCheckbox from "./components/InputCheckbox";
 
 export default function App() {
   // State
@@ -12,15 +13,10 @@ export default function App() {
     <div className="App">
       <h1>Input style components</h1>
       <p>Item is checked? {check ? "yup" : "nope"}</p>
-      {/* Checkbox */}
-      <label className="input-field checkbox">
-        <input
-          type="checkbox"
-          value={check}
-          onChange={() => setCheck(!check)}
-        />
-        Click here to agree with the terms and conditions
-      </label>
+      <InputCheckbox
+        settings={{ label: "Click here to agree" }}
+        state={[check, setCheck]}
+      />
     </div>
   );
 }
