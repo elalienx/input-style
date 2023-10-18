@@ -1,0 +1,14 @@
+{
+  "terms": {
+    "label": "Click here to agreen with the terms and conditions"
+  },
+  "guests": {
+    "label": "How many guests do you want to invite?",
+    "minium": 1,
+    "maximum": 10
+  },
+  "search": {
+    "label": "Search bar",
+    "placeholder": "Toyota Celica Rally 1995"
+  }
+}

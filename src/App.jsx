@@ -4,10 +4,13 @@ import { useState } from "react";
 // Project files
 import "./styles/style.css";
 import InputCheckbox from "./components/InputCheckbox";
+import InputRange from "./components/InputRange";
+import myFormulary from "./data/myFormulary.json";
 
 export default function App() {
   // State
   const [check, setCheck] = useState(false);
+  const [range, setRange] = useState(5);
 
   return (
     <div className="App">
@@ -16,11 +19,15 @@ export default function App() {
         This project will serve as a mini repository or even library of styled
         components.
       </p>
-      <p>Item is checked? {check ? "yup" : "nope"}</p>
-      <InputCheckbox
-        settings={{ label: "Click here to agree" }}
-        state={[check, setCheck]}
-      />
+
+      {/* Checkbox */}
+      <h2>Checkbox</h2>
+      <p>Item is checked? {check ? "yup ✅" : "nope ❌"}</p>
+      <InputCheckbox settings={myFormulary.terms} state={[check, setCheck]} />
+
+      {/* Range slider */}
+      <h2>Range slider</h2>
+      <InputRange settings={myFormulary.guests} state={[range, setRange]} />
     </div>
   );
 }
