@@ -1,15 +1,11 @@
 .input.checkbox {
-  background-color: pink;
-
-  /* Change to flex */
   display: grid;
-  grid-template-columns: 1em auto;
-  gap: 8px;
+  grid-template-columns: var(--space-big) auto;
   font-size: var(--font-size);
 }
 
 .input.checkbox input[type="checkbox"] {
-  --outer-size: 16px;
+  --outer-size: 24px;
 
   display: grid;
   place-content: center;
@@ -18,12 +14,12 @@
   height: var(--outer-size);
   margin: 0;
   background-color: white;
-  border: solid 1.5px var(--color-text);
+  border: solid 1.5px var(--color-border);
   border-radius: var(--border-radius);
 }
 
 .input.checkbox input[type="checkbox"]::before {
-  --inner-size: 8px;
+  --inner-size: 12px;
 
   content: "";
   width: var(--inner-size);
@@ -35,4 +31,8 @@
 
 .input.checkbox input[type="checkbox"]:checked::before {
   transform: scale(1);
+}
+
+.input.checkbox:hover input[type="checkbox"] {
+  background-color: var(--color-background);
 }
